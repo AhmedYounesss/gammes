@@ -1,7 +1,12 @@
+
+body {
+    background: #e3e3e3;
+    padding: 20px 10px;
+}
 ul {
     list-style-type: none;
     overflow: hidden;
-    background-color: #484848;
+    background-color: #4C4F3E;
 }
 
 li {
@@ -17,7 +22,10 @@ li a {
     font-size: 20px;
 }
 
-/* Change the link color to #111 (black) on hover */
 li a:hover {
     background-color: #606060;
+}
+.image {
+    position: relative;
+    overflow: hidden;
 }
