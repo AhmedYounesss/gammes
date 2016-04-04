@@ -7,10 +7,15 @@ ul {
     list-style-type: none;
     overflow: hidden;
     background-color: #4C4F3E;
+    border-radius: 25px;
+    height: 90px;
 }
 
 li {
     float: left;
+    margin: 15px;
+    font-family: cursive;
+    margin-right: 117px;
 }
 
 li a {
@@ -23,7 +28,10 @@ li a {
 }
 
 li a:hover {
-    background-color: #606060;
+    background-color: #4C4F3E;
+    height: 90px;
+    margin: 15px;
+
 }
 .image {
     position: relative;
