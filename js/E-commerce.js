@@ -2,45 +2,47 @@
  * Created by younes on 05/04/2016.
  */
 
-var commerceApp = angular.module('commerceApp', ['ngRoute']);
+var app = angular.module('commerceApp', ['ngRoute']);
 
-commerceApp.config(function($routeProvider) {
+app.config(function($routeProvider ) {
     $routeProvider
-
         .when('/', {
-            templateUrl : 'pages/home.html',
+            templateUrl : '/templates/home.html',
             controller  : 'homeController'
         })
 
         .when('/reference', {
-            templateUrl : 'pages/reference.html',
+            templateUrl : '/templates/reference.html',
             controller  : 'referenceController'
         })
 
         .when('/fonctionnalite', {
-            templateUrl : 'pages/fonctionnalite.html',
+            templateUrl : '/templates/fonctionnalite.html',
 
             controller  : 'fonctionnaliteController'
         })
 
         .when('/contact', {
-        templateUrl : 'pages/contact.html',
+        templateUrl : 'templates/contact.html',
 
         controller  : 'contactController'
     });
 });
 
-commerceApp.controller('homeController', function($scope) {
+app.controller('mainController', function($scope) {
+    $scope.message = 'bonjour!';
 
 });
 
-commerceApp.controller('referenceController', function($scope) {
+app.controller('referenceController', function($scope) {
 
 });
 
-commerceApp.controller('fonctionnaliteController', function($scope) {
+app.controller('fonctionnaliteController', function($scope) {
 
 });
-commerceApp.controller('contactController', function($scope) {
+app.controller('contactController', function($scope) {
+
+    console.log("bjr")
 
 });
